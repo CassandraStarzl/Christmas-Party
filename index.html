@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Party</title>
+    <title>3D Christmas Tree</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
     <header>
@@ -18,13 +19,26 @@
     
     <main>
         <section class="tree-section">
-            <div class="tree">
-                <!-- Placeholder for 3D Christmas Tree -->
-            </div>
-            <div class="snowflakes">
-                <span>&#10052;</span>
-                <span>&#10052;</span>
-            </div>
+            <!-- A-Frame Scene for 3D Christmas Tree -->
+            <a-scene>
+                <!-- Tree layers -->
+                <a-cone color="#93a08d" height="3" radius-bottom="1.5" position="0 1.5 0"></a-cone>
+                <a-cone color="#93a08d" height="2.5" radius-bottom="1.2" position="0 3.5 0"></a-cone>
+                <a-cone color="#93a08d" height="2" radius-bottom="0.9" position="0 5.2 0"></a-cone>
+                
+                <!-- Tree trunk -->
+                <a-cylinder color="#3f4636" height="1" radius="0.3" position="0 0 0"></a-cylinder>
+                
+                <!-- Decorative sphere for tree topper -->
+                <a-sphere color="#ed4d45" radius="0.3" position="0 6 0"></a-sphere>
+
+                <!-- Lighting -->
+                <a-light type="ambient" color="#888"></a-light>
+                <a-light type="point" position="2 4 4" intensity="0.5"></a-light>
+                
+                <!-- Camera -->
+                <a-camera position="0 2 5"></a-camera>
+            </a-scene>
         </section>
         
         <section class="content">
@@ -45,5 +59,8 @@
             </div>
         </section>
     </main>
+</body>
+</html>
+
 </body>
 </html>
