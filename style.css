@@ -25,11 +25,11 @@ header {
 header h1 {
     font-size: 2.5em;
     font-family: 'Mountains of Christmas', cursive;
-    color: #932421; /* Darker festive red */
+    color: #f8f1ec; /* Softer white for the title */
 }
 
 nav a {
-    color: #dedfe4; /* Light color for nav links */
+    color: #f8f1ec; /* Light color for nav links */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -41,26 +41,30 @@ main {
     align-items: center;
     width: 100%;
     max-width: 800px;
+    background-color: #93a08d; /* Sage green background for main content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .tree-section {
-    position: relative;
-    text-align: center;
-    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f4636; /* Dark green background for tree section */
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.tree {
-    width: 100px;
-    height: 150px;
-    background-color: #93a08d; /* Sage green for tree */
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    margin: 0 auto;
-}
-
-.snowflakes span {
-    font-size: 2em;
-    color: #ed4d45; /* Festive red for snowflakes */
-    margin: 0 10px;
+a-scene {
+    width: 100%;
+    height: 100%;
 }
 
 .content {
@@ -72,21 +76,22 @@ main {
 }
 
 .info-box, .rsvp-box, .map-box {
-    background-color: #dedfe4; /* Light grayish background for boxes */
+    background-color: #f8f1ec; /* Softer white for boxes */
     padding: 20px;
     border: 2px solid #93a08d; /* Sage green border */
     width: 100%;
     max-width: 250px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.info-box h2 {
-    color: #3f4636; /* Dark greenish color for headings */
+.info-box h2, .map-box h3 {
+    color: #ed4d45; /* Festive red for headings */
 }
 
-.info-box p {
-    color: #3f4636; /* Darker green text */
+.info-box p, .map-box p {
+    color: #3f4636; /* Dark greenish text for content */
 }
 
 .rsvp-box button {
@@ -97,12 +102,20 @@ main {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
 }
 
 .rsvp-box button:hover {
     background-color: #932421; /* Darker red on hover */
 }
 
-.map-box h3 {
-    color: #3f4636; /* Dark greenish color for map heading */
+footer {
+    background-color: #3f4636; /* Dark green footer */
+    color: #f8f1ec; /* Light color for footer text */
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
