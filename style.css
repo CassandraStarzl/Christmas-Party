@@ -1,0 +1,108 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dedfe4; /* Light grayish background */
+    color: #3f4636; /* Dark greenish color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ed4d45; /* Festive red */
+    width: 100%;
+    color: #dedfe4; /* Light color for contrast */
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Mountains of Christmas', cursive;
+    color: #932421; /* Darker festive red */
+}
+
+nav a {
+    color: #dedfe4; /* Light color for nav links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.tree-section {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tree {
+    width: 100px;
+    height: 150px;
+    background-color: #93a08d; /* Sage green for tree */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin: 0 auto;
+}
+
+.snowflakes span {
+    font-size: 2em;
+    color: #ed4d45; /* Festive red for snowflakes */
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-box, .rsvp-box, .map-box {
+    background-color: #dedfe4; /* Light grayish background for boxes */
+    padding: 20px;
+    border: 2px solid #93a08d; /* Sage green border */
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info-box h2 {
+    color: #3f4636; /* Dark greenish color for headings */
+}
+
+.info-box p {
+    color: #3f4636; /* Darker green text */
+}
+
+.rsvp-box button {
+    background-color: #ed4d45; /* Festive red for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.rsvp-box button:hover {
+    background-color: #932421; /* Darker red on hover */
+}
+
+.map-box h3 {
+    color: #3f4636; /* Dark greenish color for map heading */
+}
