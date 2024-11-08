@@ -16,18 +16,18 @@ body {
 
 header {
     position: relative;
-    z-index: 10; /* Ensures header appears above the tree */
+    z-index: 10; 
     text-align: center;
     padding: 20px;
-    background-color: #ed4d45; /* Festive red */
+    background-color: #ed4d45; /* red */
     width: 100%;
-    color: #dedfe4; /* Light color for contrast */
+    color: #dedfe4; /* Light color */
 }
 
 header h1 {
     font-size: 2.5em;
     font-family: 'Mountains of Christmas', cursive;
-    color: #f8f1ec; /* Softer white for the title */
+    color: #f8f1ec; /*  white for the title */
 }
 
 nav a {
@@ -64,7 +64,7 @@ main {
     background-color: #3f4636; /* Dark green background for tree section */
     border-radius: 10px;
     padding: 10px;
-    overflow: hidden; /* Prevents any overflow */
+    overflow: hidden; 
 }
 
 a-scene {
@@ -81,7 +81,7 @@ a-scene {
 }
 
 .info-box, .rsvp-box, .map-box {
-    background-color: #f8f1ec; /* Softer white for boxes */
+    background-color: #f8f1ec; /* white for boxes */
     padding: 20px;
     border: 2px solid #93a08d; /* Sage green border */
     width: 100%;
@@ -92,17 +92,17 @@ a-scene {
 }
 
 .info-box h2, .map-box h3 {
-    color: #ed4d45; /* Festive red for headings */
+    color: #ed4d45; /* red for headings */
 }
 
 .info-box p, .map-box p {
-    color: #3f4636; /* Dark greenish text for content */
+    color: #3f4636; /* Dark greenish text */
 }
 
 .rsvp-box button {
     position: relative;
     z-index: 10; /* Ensures RSVP button appears above the tree */
-    background-color: #ed4d45; /* Festive red for button */
+    background-color: #ed4d45; /* red for button */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -120,7 +120,7 @@ a-scene {
 /* RSVP Section Styling */
 .rsvp-section {
     background-color: #93a08d; /* Sage green */
-    color: #f8f1ec; /* Soft white text */
+    color: #f8f1ec; /* white text */
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -131,7 +131,7 @@ a-scene {
 }
 
 .rsvp-section h2 {
-    color: #ed4d45; /* Festive red for heading */
+    color: #ed4d45; /* red for heading */
     font-family: 'Mountains of Christmas', cursive;
 }
 
@@ -155,13 +155,13 @@ a-scene {
 }
 
 .rsvp-form input:focus {
-    border-color: #ed4d45; /* Festive red on focus */
+    border-color: #ed4d45; /* red on focus */
     outline: none;
 }
 
 .rsvp-form button {
-    background-color: #ed4d45; /* Festive red button */
-    color: #f8f1ec; /* Soft white text */
+    background-color: #ed4d45; /* red button */
+    color: #f8f1ec; /* white text */
     padding: 10px;
     font-size: 1em;
     border: none;
