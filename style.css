@@ -15,6 +15,8 @@ body {
 }
 
 header {
+    position: relative;
+    z-index: 10; /* Ensures header appears above the tree */
     text-align: center;
     padding: 20px;
     background-color: #ed4d45; /* Festive red */
@@ -49,6 +51,8 @@ main {
 }
 
 .tree-section {
+    position: relative;
+    z-index: 1; /* Sets tree section behind header and buttons */
     width: 100%;
     max-width: 600px;
     height: 400px;
@@ -60,6 +64,7 @@ main {
     background-color: #3f4636; /* Dark green background for tree section */
     border-radius: 10px;
     padding: 10px;
+    overflow: hidden; /* Prevents any overflow */
 }
 
 a-scene {
@@ -95,6 +100,8 @@ a-scene {
 }
 
 .rsvp-box button {
+    position: relative;
+    z-index: 10; /* Ensures RSVP button appears above the tree */
     background-color: #ed4d45; /* Festive red for button */
     color: white;
     padding: 10px 20px;
@@ -107,6 +114,63 @@ a-scene {
 }
 
 .rsvp-box button:hover {
+    background-color: #932421; /* Darker red on hover */
+}
+
+/* RSVP Section Styling */
+.rsvp-section {
+    background-color: #93a08d; /* Sage green */
+    color: #f8f1ec; /* Soft white text */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-section h2 {
+    color: #ed4d45; /* Festive red for heading */
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.rsvp-form label {
+    color: #3f4636; /* Dark greenish color */
+    font-weight: bold;
+}
+
+.rsvp-form input {
+    padding: 10px;
+    border: 2px solid #dedfe4; /* Light gray */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.rsvp-form input:focus {
+    border-color: #ed4d45; /* Festive red on focus */
+    outline: none;
+}
+
+.rsvp-form button {
+    background-color: #ed4d45; /* Festive red button */
+    color: #f8f1ec; /* Soft white text */
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rsvp-form button:hover {
     background-color: #932421; /* Darker red on hover */
 }
 
