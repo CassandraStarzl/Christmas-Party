@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Party</title>
+    <title>3D Christmas Tree</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
     <header>
@@ -18,13 +19,45 @@
     
     <main>
         <section class="tree-section">
-            <div class="tree">
-                <!-- Placeholder for 3D Christmas Tree -->
-            </div>
-            <div class="snowflakes">
-                <span>&#10052;</span>
-                <span>&#10052;</span>
-            </div>
+            <!-- A-Frame Scene for 3D Christmas Tree with Gifts -->
+            <a-scene>
+                <!-- Christmas Tree Layers -->
+                <a-cone color="#3f4636" height="3.5" radius-bottom="1.8" position="0 2 0"></a-cone>
+                <a-cone color="#3f4636" height="3" radius-bottom="1.5" position="0 4.5 0"></a-cone>
+                <a-cone color="#3f4636" height="2.5" radius-bottom="1.2" position="0 6.5 0"></a-cone>
+                
+                <!-- Tree Trunk -->
+                <a-cylinder color="#8B4513" height="1" radius="0.3" position="0 1 0"></a-cylinder>
+                
+                <!-- Tree Topper -->
+                <a-sphere color="#ed4d45" radius="0.3" position="0 7.8 0"></a-sphere>
+
+                <!-- Gifts around the tree, slightly moved outward -->
+                <a-box color="#ff6347" depth="0.5" height="0.5" width="0.5" position="-2 0.25 -1.5"></a-box>
+                <a-box color="#ffa500" depth="0.5" height="0.5" width="0.5" position="2 0.25 -1.5"></a-box>
+                <a-box color="#4682b4" depth="0.5" height="0.5" width="0.5" position="-2 0.25 1.5"></a-box>
+                <a-box color="#9370db" depth="0.5" height="0.5" width="0.5" position="2 0.25 1.5"></a-box>
+
+                <!-- Ribbons on gifts -->
+                <a-box color="#ffffff" depth="0.05" height="0.5" width="0.05" position="-2 0.25 -1.5"></a-box>
+                <a-box color="#ffffff" depth="0.05" height="0.05" width="0.5" position="-2 0.5 -1.5"></a-box>
+
+                <a-box color="#ffffff" depth="0.05" height="0.5" width="0.05" position="2 0.25 -1.5"></a-box>
+                <a-box color="#ffffff" depth="0.05" height="0.05" width="0.5" position="2 0.5 -1.5"></a-box>
+
+                <a-box color="#ffffff" depth="0.05" height="0.5" width="0.05" position="-2 0.25 1.5"></a-box>
+                <a-box color="#ffffff" depth="0.05" height="0.05" width="0.5" position="-2 0.5 1.5"></a-box>
+
+                <a-box color="#ffffff" depth="0.05" height="0.5" width="0.05" position="2 0.25 1.5"></a-box>
+                <a-box color="#ffffff" depth="0.05" height="0.05" width="0.5" position="2 0.5 1.5"></a-box>
+
+                <!-- Lighting for ambiance -->
+                <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
+                <a-light type="point" position="4 5 4" intensity="0.8"></a-light>
+
+                <!-- Camera -->
+                <a-camera position="0 2 8"></a-camera>
+            </a-scene>
         </section>
         
         <section class="content">
@@ -47,4 +80,3 @@
     </main>
 </body>
 </html>
-
