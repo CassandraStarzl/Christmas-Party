@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Christmas Party</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Christmas Party RSVP</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="rsvp.html">RSVP</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="rsvp-section">
+            <h2>Join the Festivities!</h2>
+            <p>Please fill out the form below to let us know you'll be attending.</p>
+            <form action="#" method="post" class="rsvp-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Looking forward to celebrating with you! Happy Holidays!</p>
+    </footer>
+</body>
+</html>
