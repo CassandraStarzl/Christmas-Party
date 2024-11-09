@@ -16,18 +16,18 @@ body {
 
 header {
     position: relative;
-    z-index: 10; 
+    z-index: 10; /* Ensures header appears above the tree */
     text-align: center;
     padding: 20px;
     background-color: #ed4d45; /* red */
     width: 100%;
-    color: #dedfe4; /* Light color */
+    color: #dedfe4; /* Light color for contrast */
 }
 
 header h1 {
     font-size: 2.5em;
     font-family: 'Mountains of Christmas', cursive;
-    color: #f8f1ec; /*  white for the title */
+    color: #f8f1ec; /* white for the title */
 }
 
 nav a {
@@ -64,7 +64,7 @@ main {
     background-color: #3f4636; /* Dark green background for tree section */
     border-radius: 10px;
     padding: 10px;
-    overflow: hidden; 
+    overflow: hidden; /* Prevents any overflow */
 }
 
 a-scene {
@@ -81,7 +81,7 @@ a-scene {
 }
 
 .info-box, .rsvp-box, .map-box {
-    background-color: #f8f1ec; /* white for boxes */
+    background-color: #f8f1ec; /*  white for boxes */
     padding: 20px;
     border: 2px solid #93a08d; /* Sage green border */
     width: 100%;
@@ -96,7 +96,7 @@ a-scene {
 }
 
 .info-box p, .map-box p {
-    color: #3f4636; /* Dark greenish text */
+    color: #3f4636; /* Dark greenish text for content */
 }
 
 .rsvp-box button {
@@ -120,7 +120,7 @@ a-scene {
 /* RSVP Section Styling */
 .rsvp-section {
     background-color: #93a08d; /* Sage green */
-    color: #f8f1ec; /* white text */
+    color: #f8f1ec; /*  white text */
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -183,3 +183,4 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+
