@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IdeaSpaceVR/aframe-particle-system-component/dist/aframe-particle-system-component.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,6 @@
     
     <main>
         <section class="tree-section">
-            <!-- A-Frame Scene for 3D Christmas Tree with Gifts -->
             <a-scene>
                 <!-- Background image and floor -->
                 <a-assets>
@@ -28,6 +28,12 @@
                 </a-assets>
                 <a-sky src="#backgroundImage"></a-sky>
                 <a-plane position="0 -1 0" rotation="-90 0 0" width="10" height="10" color="#8B4513"></a-plane>
+
+                <!-- Snow Particle System -->
+                <a-entity
+                    particle-system="preset: snow; particleCount: 1000"
+                    position="0 5 -5">
+                </a-entity>
 
                 <!-- Christmas tree setup -->
                 <a-cone color="#3f4636" height="3.5" radius-bottom="1.8" position="0 0 0"></a-cone>
